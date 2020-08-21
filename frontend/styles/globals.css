@@ -1,0 +1,72 @@
+:root {
+  --dark: #171717;
+  --gold: #F8E71D;
+  --gray: #F4F5F7;
+  --gold-rgb: 248, 231, 29;
+  --pad-global: 0 3em;
+  --pad-in-y: 1em;
+  --pad-in-x: 3.5em;
+  --pad-in: var(--pad-in-y) var(--pad-in-x);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 16px; 
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h2.secondTitle {
+  font-weight: bold;
+}
+
+em {
+  padding: 0.25em;
+  background-color: #eddbff;
+  border-radius: 4px;
+  margin-right: 0.25em;
+}
+
+.btnAction {
+  background: var(--gold);
+  color: var(--dark);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: .5em 3.75em;
+}
+
+.btnAction:hover {
+  background: rgba(var(--gold-rgb), .7);
+}
+
+.btnAction:active {
+  background: rgba(var(--gold-rgb), .9);
+}

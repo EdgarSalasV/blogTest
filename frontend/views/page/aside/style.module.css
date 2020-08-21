@@ -1,0 +1,10 @@
+.aside {
+    position: fixed;
+    top: 50%;
+    left: -8.5em;
+    transform: translateY(-50%) rotate(-90deg);
+}
+
+.link {
+    color: var(--gold);
+}

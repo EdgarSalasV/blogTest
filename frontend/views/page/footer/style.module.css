@@ -1,0 +1,75 @@
+.footer {
+    position: relative;
+    padding: var(--pad-in);
+    background: var(--dark);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto);
+    grid-gap: 2em;
+}
+
+.footer > * { 
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.footer > h4 {
+    font-size: 1.65em;
+}
+.footer > img {
+    position: absolute;
+    right: 0;
+    z-index: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 90%;
+}
+
+
+/* ICONS SOCIAL ´NETWORKS */
+.icons > * {
+    color: var(--gold);
+    font-size: 1.5em;
+    margin: .5em;
+    cursor: pointer;
+}
+
+
+/* CONTACTS */
+.contacts {
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+   text-align: left;
+}
+.infoContact{
+    list-style: none;
+}
+.infoContactTitle::after {
+    content: '';
+    display: block;
+    width: 2.5em;
+    height: 2px;
+    background: #877F1A;
+}
+
+@media (max-width: 700px) {
+    .footer {
+        font-size: 12px;
+    }
+}
+@media (max-width: 500px) {
+    .contacts {
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+    }
+    .contacts > * {
+        width: 100%;
+    }
+    .infoContactTitle::after {
+        text-align: center;
+        margin: auto;
+    }
+}
